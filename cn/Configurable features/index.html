@@ -1,0 +1,1568 @@
+
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Chevereto中文文档">
+      
+      
+        <link rel="canonical" href="https://ch.cndrew.cn/cn/Configurable features/">
+      
+      
+        <meta name="author" content="Uncle_drew">
+      
+      
+        <meta name="lang:clipboard.copy" content="复制">
+      
+        <meta name="lang:clipboard.copied" content="已复制">
+      
+        <meta name="lang:search.language" content="zh">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="没有找到符合条件的结果">
+      
+        <meta name="lang:search.result.one" content="找到 1 个符合条件的结果">
+      
+        <meta name="lang:search.result.other" content="# 个符合条件的结果">
+      
+        <meta name="lang:search.tokenizer" content="[\uff0c\u3002]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Configurable features - Chevereto-中文文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../_static/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        跳转至
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://ch.cndrew.cn/" title="Chevereto-中文文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Chevereto-中文文档
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Configurable features
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            键入以开始搜索
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/debug-code-healer/CN-Chevereto/" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="介绍" class="md-tabs__link md-tabs__link--active">
+        介绍
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Preface/Introduction/" title="Chevereto-中文文档" class="md-tabs__link">
+          Chevereto-中文文档
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://ch.cndrew.cn/" title="Chevereto-中文文档" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Chevereto-中文文档
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/debug-code-healer/CN-Chevereto/" title="前往 Github 仓库" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="介绍" class="md-nav__link">
+      介绍
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Chevereto-中文文档
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Chevereto-中文文档
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      前言
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        前言
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Preface/Introduction/" title="简介" class="md-nav__link">
+      简介
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Preface/How it works/" title="工作原理" class="md-nav__link">
+      工作原理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Preface/Licenses/" title="许可证" class="md-nav__link">
+      许可证
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Preface/Get updates/" title="获取更新" class="md-nav__link">
+      获取更新
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      安装
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        安装
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Setup/Install/" title="安装" class="md-nav__link">
+      安装
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Setup/Update guide/" title="更新指南" class="md-nav__link">
+      更新指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Setup/Requirements/" title="系统需求" class="md-nav__link">
+      系统需求
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Setup/Server issues/" title="服务器问题" class="md-nav__link">
+      服务器问题
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Setup/Debug/" title="调试" class="md-nav__link">
+      调试
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      功能配置
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        功能配置
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Image upload/" title="上传图片" class="md-nav__link">
+      上传图片
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Categories/" title="分类" class="md-nav__link">
+      分类
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Email/" title="邮箱" class="md-nav__link">
+      邮箱
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Banners/" title="横幅广告" class="md-nav__link">
+      横幅广告
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Flood protection/" title="防洪保护" class="md-nav__link">
+      防洪保护
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Social networks/" title="社交网络" class="md-nav__link">
+      社交网络
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Personal mode/" title="个人模式" class="md-nav__link">
+      个人模式
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="External services/" title="外部服务" class="md-nav__link">
+      外部服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Languages/" title="语言" class="md-nav__link">
+      语言
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      自定义(定制)
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        自定义(定制)
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Customization/Dashboard/" title="仪表盘" class="md-nav__link">
+      仪表盘
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Customization/Configuration/" title="配置" class="md-nav__link">
+      配置
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Customization/Theme/" title="主题" class="md-nav__link">
+      主题
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Customization/Pages/" title="页面" class="md-nav__link">
+      页面
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Customization/Language strings/" title="语言字符串" class="md-nav__link">
+      语言字符串
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Customization/Routes/" title="路由" class="md-nav__link">
+      路由
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      扩展
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        扩展
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Extend/External storage/" title="外部存储" class="md-nav__link">
+      外部存储
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Extend/Upload plugin/" title="插件下载" class="md-nav__link">
+      插件下载
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Extend/Bulk content importer/" title="批量内容导入" class="md-nav__link">
+      批量内容导入
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Extend/CloudFlare/" title="CloudFlare" class="md-nav__link">
+      CloudFlare
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Extend/CDN/" title="内容交付网络（CDN）" class="md-nav__link">
+      内容交付网络（CDN）
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Extend/ShareX/" title="ShareX" class="md-nav__link">
+      ShareX
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Extend/Going big/" title="展望" class="md-nav__link">
+      展望
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      API
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        API
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../API/API/" title="API" class="md-nav__link">
+      API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../API/API V1/" title="API V1" class="md-nav__link">
+      API V1
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
+      其他功能
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        其他功能
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Other features/Security/" title="安全配置" class="md-nav__link">
+      安全配置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">目录</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="上传图片" class="md-nav__link">
+    上传图片
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="可配置的选项" class="md-nav__link">
+    可配置的选项
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="上传（启用/禁止）" class="md-nav__link">
+    上传（启用/禁止）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="访客上传（启用/禁止）" class="md-nav__link">
+    访客上传（启用/禁止）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="文件上传的最大大小" class="md-nav__link">
+    文件上传的最大大小
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="图像路径" class="md-nav__link">
+    图像路径
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="存储模式" class="md-nav__link">
+    存储模式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="文件命名" class="md-nav__link">
+    文件命名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="缩略图大小" class="md-nav__link">
+    缩略图大小
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="中等图片大小" class="md-nav__link">
+    中等图片大小
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="水印（开启/关闭）" class="md-nav__link">
+    水印（开启/关闭）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" title="分类" class="md-nav__link">
+    分类
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="添加一个类别" class="md-nav__link">
+    添加一个类别
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seo" title="分类的SEO" class="md-nav__link">
+    分类的SEO
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" title="邮箱" class="md-nav__link">
+    邮箱
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="可配置选项" class="md-nav__link">
+    可配置选项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="推荐设置" class="md-nav__link">
+    推荐设置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" title="横幅广告" class="md-nav__link">
+    横幅广告
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="添加广告代码" class="md-nav__link">
+    添加广告代码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="广告网络（普通网站）" class="md-nav__link">
+    广告网络（普通网站）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="广告网络（成人网站）" class="md-nav__link">
+    广告网络（成人网站）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" title="防洪保护" class="md-nav__link">
+    防洪保护
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flood-attack" title="什么是洪水袭击（flood attack）" class="md-nav__link">
+    什么是洪水袭击（flood attack）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" title="防洪保护是怎么工作的" class="md-nav__link">
+    防洪保护是怎么工作的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="开启防洪保护" class="md-nav__link">
+    开启防洪保护
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_24" title="社交网络" class="md-nav__link">
+    社交网络
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" title="启用社交网络登录" class="md-nav__link">
+    启用社交网络登录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facebook" title="Facebook登录" class="md-nav__link">
+    Facebook登录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#twitter" title="Twitter登录" class="md-nav__link">
+    Twitter登录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#google" title="Google登录" class="md-nav__link">
+    Google登录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vk" title="VK登录" class="md-nav__link">
+    VK登录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_26" title="个人模式" class="md-nav__link">
+    个人模式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" title="启用个人模式" class="md-nav__link">
+    启用个人模式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="个人模式文件路径" class="md-nav__link">
+    个人模式文件路径
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="管理员" class="md-nav__link">
+    管理员
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" title="主页定制" class="md-nav__link">
+    主页定制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" title="外部服务" class="md-nav__link">
+    外部服务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdn" title="CDN" class="md-nav__link">
+    CDN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recaptcha" title="reCAPTCHA（验证码）" class="md-nav__link">
+    reCAPTCHA（验证码）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" title="评论系统" class="md-nav__link">
+    评论系统
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="分析代码" class="md-nav__link">
+    分析代码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_34" title="语言" class="md-nav__link">
+    语言
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="仪表盘设置" class="md-nav__link">
+    仪表盘设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="默认的语言" class="md-nav__link">
+    默认的语言
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" title="自动选择语言" class="md-nav__link">
+    自动选择语言
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" title="语言选择器" class="md-nav__link">
+    语言选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" title="可用的语言" class="md-nav__link">
+    可用的语言
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" title="添加新语言" class="md-nav__link">
+    添加新语言
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/debug-code-healer/CN-Chevereto/edit/master/docs/cn/Configurable features.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Configurable features</h1>
+                
+                <h4 id="_1">上传图片<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h4>
+<p>图像上传是Chevereto的主要功能，您可以在仪表板&gt;设置&gt;图像上传中高度自定义它的工作方式。</p>
+<h4 id="_2">可配置的选项<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
+<h5 id="_3">上传（启用/禁止）<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
+<p>控制图像上传功能的全局设置。当它启用的时候，系统将允许在所有端点（主网站和API访问）上传图片。</p>
+<h5 id="_4">访客上传（启用/禁止）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h5>
+<p>控制没有登录的用户的图片上传功能。如果你想只允许登录的用户才可以上传图片，这个你应该设置为<code>启用</code>，然后系统会要求登录以上传图片。</p>
+<h5 id="_5">文件上传的最大大小<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h5>
+<p>配置允许上传的每张图片的大小的最大值，然后系统将不会允许上传的图片的大小大于在设置中设置的值。注意你设置的值不能超过服务器允许的最大值。文件上传限制，当您在此设置中使用较大值时，将会存在一些<a href="https://php.net/manual/en/features.file-upload.common-pitfalls.php">常见的PHP的坑</a>。。</p>
+<h5 id="_6">图像路径<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h5>
+<p>设置系统在Chevereto根目录下存储上传图片的保存路径。这个设置仅在上传图片到本地存储的时候可用。<code>默认的值：images</code>。</p>
+<h5 id="_7">存储模式<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h5>
+<p>设置上传图像的路径前缀。当你使用<code>Datefolders</code>的时候，系统将会为上传的图片创造一个<code>2014/10/14/</code>这样的的结构。<code>默认值：Datefolders</code></p>
+<blockquote>
+<p>Datefolders：日期文件夹</p>
+</blockquote>
+<h5 id="_8">文件命名<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h5>
+<p>控制上传的图片在存储的时候如何命名或者重命名。当你使用"Original" 的时候，系统会尝试使用文件本来的名字，使用"Random" 的时候，系统会生成一个完全随机的文件名，使用"Mixed" 的时候，系统会使用来自源文件名和一部分随机字符串。当你使用"Original" 的时候，如果这次要上传的文件名已经存在，系统会自动使用"Random" 。<code>默认值：Original</code></p>
+<blockquote>
+<p>Original：原始的   <br />
+Random：随机的      <br />
+Mixed：原始的+随机的
+还有一个"ID"的模式， 这种模式使用生成的图像ID来命名.</p>
+</blockquote>
+<h5 id="_9">缩略图大小<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
+<p>为生成的缩略图设置确定的高度和宽度。生成的图像将具有固定的尺寸，不会被调整。</p>
+<h5 id="_10">中等图片大小<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h5>
+<p>设置生成中等图片大小的宽度，高度将会按照这个宽度自动进行调整。</p>
+<h5 id="_11">水印（开启/关闭）<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h5>
+<p>控制上传图像的水印功能的使用。当启用水印将添加到上传的图像，您可以配置水印图像，位置和不透明度。</p>
+<h4 id="_12">分类<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<p>Chevereto允许你创建无限个分类，有助于对上传的图片进行分类，并且会对每一个相册生成一个清单。</p>
+<h5 id="_13">添加一个类别<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h5>
+<ol>
+<li>转到仪表盘 &gt; 设置 &gt; 分类</li>
+<li>点击“添加类别”</li>
+<li>填写表格中所需要的数据</li>
+</ol>
+<h5 id="seo">分类的SEO<a class="headerlink" href="#seo" title="Permanent link">&para;</a></h5>
+<p>系统允许你自定义分类的名称，链接和描述。为了获得更好的SEO结果，尝试在URL键中使用连字符(-)而不是下划线(_)。类别描述将在<code>&lt;meta name="description"&gt;</code>的标记中使用。</p>
+<h4 id="_14">邮箱<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<p>此功能允许您自定义位于仪表板 &gt; 设置 &gt; 电子邮件的整体电子邮件发送设置。</p>
+<h5 id="_15">可配置选项<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h5>
+<ul>
+<li>系统的邮箱地址和发件人名字</li>
+<li>发邮件的模式（SMTP或者PHPMail）</li>
+<li>对于SMTP，您可以配置安全协议、主机、端口等。</li>
+</ul>
+<h5 id="_16">推荐设置<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h5>
+<p>推荐使用SMTP的发送邮件方式，因为它在发送邮件这一方面有更好的表现。本机PHP函数(PHPMail)应该只在开发环境中使用，为了可靠性，您应该始终使用SMTP。
+要使用SMTP方法，您需要能够在您的邮件公司获得的SMTP凭据。您还可以使用第三方SMTP提供者，如<a href="https://app.sparkpost.com/">SparkPost</a>。</p>
+<h4 id="_17">横幅广告<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<p>Chevereto是一个流量制造机器，你会发现它用广告赚钱会效率很高。默认情况下，该系统自带16个预定义的广告位，允许您通过图像托管网站通过添加广告产生收入。</p>
+<h5 id="_18">添加广告代码<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h5>
+<ol>
+<li>转到仪表盘 &gt; 设置 &gt; 横幅广告</li>
+<li>将代码粘贴到所需的广告位中</li>
+<li>向下滚动并点击保存修改</li>
+</ol>
+<h5 id="_19">广告网络（普通网站）<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h5>
+<p>根据你的网站定位和你的流量来源，你会注意到一些广告网络对你来说是好的，也有一部分是不好的。这里有一个你可以尝试的广告网络的列表。</p>
+<ul>
+<li>Google AdSense</li>
+<li>Yahoo Advertising</li>
+<li>Bing Ads</li>
+<li>Vibrant Media</li>
+<li>Clicksor</li>
+<li>Chitika</li>
+<li>BidVertiser</li>
+<li>SiteScout</li>
+<li>BuySellAds</li>
+<li>Commission Junction</li>
+</ul>
+<p>您可以启用/禁用在有NSFW内容的广告的显示，这有助于你的广告网络。要配置此设置，请转到仪表板&gt; 设置 &gt; 内容并更换“显示横幅在不安全的内容”选项。</p>
+<h5 id="_20">广告网络（成人网站）<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h5>
+<p>如果你准备搭建一个成人图片托管网站，那么你需要使用适用于此类内容的广告。这是一个成人内容广告网络的列表。</p>
+<ul>
+<li>AdultFriendFinder and its <a href="https://secure.adultfriendfinder.com/p/partners/main.cgi?site=ffadult&amp;action=summary_sites">network</a></li>
+<li>LoadedCash</li>
+<li>TotemCash</li>
+<li>XXXwebTraffic</li>
+<li>ClickCash</li>
+<li>JuicyAds</li>
+<li>AdXpansion</li>
+</ul>
+<p>顺便说一句，Cheveteto带有黑色主题，适合成人内容。</p>
+<h4 id="_21">防洪保护<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h4>
+<p>这个功能允许您通过在管理仪表板中配置的时间/使用限制条件来防止对图像上传网站可能遭遇的洪水袭击（flood attack）。</p>
+<h5 id="flood-attack">什么是洪水袭击（flood attack）<a class="headerlink" href="#flood-attack" title="Permanent link">&para;</a></h5>
+<p>洪水攻击是指攻击者向您的网站发送很多请求，目的是耗尽整个服务器资源，使网站性能极差，甚至导致网站瘫痪。这些攻击有很多不同的类型，但它们都是使用更多机器利用系统功能上的漏洞来完成工作的。</p>
+<h5 id="_22">防洪保护是怎么工作的<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h5>
+<p>Chevereto使用每个IP上传请求的时间/使用请求来确定上传请求是否泛滥。您可以配置触发洪水标志的时间限制，当检测到洪水时，您还可以通过电子邮件得到通知。</p>
+<h5 id="_23">开启防洪保护<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h5>
+<ol>
+<li>转到仪表盘 &gt; 设置 &gt; 防洪保护</li>
+<li>选择下拉菜单中的启用</li>
+<li>编辑设置以满足你的需要</li>
+</ol>
+<p>防洪保护默认情况是开启的，我们强烈建议你在你的网站上开启防洪保护。</p>
+<h4 id="_24">社交网络<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h4>
+<p>此功能允许您自定义位于仪表板 &gt; 设置 &gt; 社交网络的内置的社交网络集成。</p>
+<h5 id="_25">启用社交网络登录<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h5>
+<p>为了开启社交网络登录，你需要在每一个社交网络服务中获取API密匙。因此建议你在每一步都按照着文档中的操作步骤来。只要你得到了API密匙，然后你只需要在仪表盘 &gt; 设置 &gt; 社交网络中启用/禁用目标社交网络，然后在每一种应用程序中填入对应的API密匙。</p>
+<h5 id="facebook">Facebook登录<a class="headerlink" href="#facebook" title="Permanent link">&para;</a></h5>
+<p>为了使用Facebook登录，你首先需要创建一个<a href="https://developers.facebook.com/">Facebook应用程序</a>。</p>
+<ol>
+<li>转到<code>https://developers.facebook.com/apps</code>(你必须首先登录Facebook)然后点击"添加一个新的应用程序"。<ol>
+<li>出现提示的时候输入你的新应用程序的显示名称，邮件和类别。</li>
+<li>点击"创建应用程序ID"，你将会跳转到一个新页面。</li>
+</ol>
+</li>
+<li>转到"设置"然后点击"添加平台"<ol>
+<li>选择"网站"然后输入你的网站链接，点击页面底部的"保存修改"。</li>
+<li>添加您的应用程序域，隐私和条款网址。记住点击页面底部的"保存修改"。</li>
+</ol>
+</li>
+<li>转到"产品"然后点击"Facebook登录"（如果不存在，则必须添加此产品）<ol>
+<li>在<code>客户端授权设置</code>中，确保启用了"网站授权登录"。</li>
+<li>在"有效的授权重定向到的链接"中填入<code>http://yourwebsite.com/connect/facebook</code>。</li>
+<li>在"取消认证后回调界面的链接"中填入<code>http://yourwebsite.com/</code>。</li>
+</ol>
+</li>
+<li>转到"应用程序审查"并公开您的应用程序（这将会为所有人启用你的应用程序）</li>
+<li>只要你的应用程序审核通过为公开的，你就可以去"仪表盘"，然后在你的Chevereto网站（仪表盘 &gt; 设置 &gt; 社交网络）中复制粘贴"应用程序ID"和"应用程序密码"</li>
+</ol>
+<p>一定要特别注意一下Facebook的应用程序审查状态。只有当你填写完所有Facebook所需的信息的时候你的应用程序才是可见的。</p>
+<h5 id="twitter">Twitter登录<a class="headerlink" href="#twitter" title="Permanent link">&para;</a></h5>
+<p>为了使用Twitte登录，你首先需要创建一个<a href="https://apps.twitter.com/">TWitter应用程序</a>。</p>
+<ol>
+<li>转到<code>apps.twitter.com</code>然后点击"添加一个新的应用程序"。</li>
+<li>使用下面的设置<ul>
+<li>网站：<code>http://www.yourwebsite.com</code></li>
+<li>回调网站的链接：<code>http://www.yourwebsite.com/connect/twitter</code></li>
+<li>允许此应用程序用于使用Twitter登录。（开启）</li>
+</ul>
+</li>
+<li>使用以下的权限<ul>
+<li>读写（选中）</li>
+</ul>
+</li>
+</ol>
+<h5 id="google">Google登录<a class="headerlink" href="#google" title="Permanent link">&para;</a></h5>
+<p>为了开启谷歌登录：</p>
+<ol>
+<li>转到<a href="https://developers.google.com/identity/sign-in/web/sign-in#before_you_begin">将谷歌登录应用到您的web应用程序中</a>然后点击"配置项目"。</li>
+<li>在需要时设置项目和产品名称。</li>
+<li>在"请求来自哪"下的"配置你的授权客户端"中选择'Web服务器'。<ul>
+<li>授权重定向的链接：<code>http://yourwebsite.com/connect/google</code></li>
+<li>点击"创建"</li>
+<li>点击"创建"之后你会获得一个<code>客户端ID</code>和<code>客户端密匙</code>，你需要在你的Chevereto仪表盘中提供它们。</li>
+</ul>
+</li>
+<li>以后你可以随时使用<a href="https://console.cloud.google.com/">API控制台</a>管理你的API凭证和使用情况。</li>
+</ol>
+<h5 id="vk">VK登录<a class="headerlink" href="#vk" title="Permanent link">&para;</a></h5>
+<p>为了使用VK登录，你需要创建一个<a href="https://vk.com/dev">VK应用程序</a>。</p>
+<ol>
+<li>转到<code>vk.com/dev</code>然后点击'创建一个应用程序'然后选择类别：网站</li>
+<li>填入你的网站信息</li>
+<li>点击"连接到站点"</li>
+<li>授权重定向链接：<code>http://www.yourwebsite.com/connect/vk</code></li>
+<li>在应用程序页面确保已启用API  </li>
+</ol>
+<h4 id="_26">个人模式<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h4>
+<p>Chevereto包含一个可配置的个人模式，允许将系统设置为单个用户实例。当启用个人模式的时候新用户将无法注册。整个网站都由一个用户使用，非常适合投资组合或任何类型的个人图库。</p>
+<h5 id="_27">启用个人模式<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h5>
+<ol>
+<li>转到仪表盘 &gt; 设置 &gt; 网站</li>
+<li>找到"网站模式"并选择"个人模式"</li>
+<li>设置目标用户id和可选路径</li>
+</ol>
+<h5 id="_28">个人模式文件路径<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h5>
+<p>这允许您设置自定义用户配置文件路径<code>/portfolio</code>或任何您想要的。此路径将映射到目标用户配置文件。</p>
+<h5 id="_29">管理员<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h5>
+<p>目标用户的id不一定必须是管理员，意思就是允许您将Chevereto设置为您可能想要的任何人的个人系统。比如说，你可以把目标用户设置成一个对这个系统不太了解的人，然后你负责管理，而他只关心上传图片即可。</p>
+<h5 id="_30">主页定制<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h5>
+<p>当使用个人模式时，系统会为主页分配不同的主题，这些主题可以在仪表板 &gt; 设置 &gt; 主页上更改。如果目标用户id具有背景设置，则该图像将用于主页封面。</p>
+<h5 id="_31">外部服务<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h5>
+<p>Chevereto包括对CDN，reCAPTCHA，评论系统，网站分析和Cloudflare的内置支持。可以在仪表板 &gt; 设置 &gt; 外部服务中配置外部服务。</p>
+<h5 id="cdn">CDN<a class="headerlink" href="#cdn" title="Permanent link">&para;</a></h5>
+<p>有关于此集成服务的详细信息可以在<a href="https://chevereto.com/docs/cdn">CDN文档</a>找到。</p>
+<h5 id="recaptcha">reCAPTCHA（验证码）<a class="headerlink" href="#recaptcha" title="Permanent link">&para;</a></h5>
+<p>验证码可以帮助防止机器人注册或者强行破解别的用户的密码。你需要得到<a href="https://www.google.com/recaptcha/intro/">reCAPTCHA密匙</a>来开启这个功能。</p>
+<h5 id="_32">评论系统<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h5>
+<p>这允许您粘贴来自<a href="https://disqus.com/">Disqus</a>，Disqus或Facebook 等多个评论系统提供商的评论代码。这段代码将插入到图像查看器注释部分。</p>
+<h5 id="_33">分析代码<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h5>
+<p>这允许您粘贴Google Analytics等分析服务提供商提供的代码。此代码将打印在每个页面中。</p>
+<h4 id="_34">语言<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h4>
+<p>Chevereto使用gettext语法进行翻译，系统内置了许多内置语言，您可以在<code>app/content/languages</code>文件夹中找到。</p>
+<h5 id="_35">仪表盘设置<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h5>
+<p>在仪表板中，您可以配置多种语言相关设置。为了配置语言可以导航到仪表盘 &gt; 设置 &gt; 语言</p>
+<h5 id="_36">默认的语言<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h5>
+<p>这将设置默认使用的语言。这意味着对于所有用户，如果关闭“自动选择语言”，默认语言将会是他们使用的语言。</p>
+<h5 id="_37">自动选择语言<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h5>
+<p>当这个功能启用时，系统将基于浏览器的语言首选项检测用户语言。如果该语言在系统中可用，cheverto将为该用户使用该语言。如果检测到的语言不可用，系统将使用“默认语言”。</p>
+<h5 id="_38">语言选择器<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h5>
+<p>当这个功能开启的时候，系统将允许用户选择他们想要用的语言。</p>
+<h5 id="_39">可用的语言<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h5>
+<p>如果您不想提供所有内置语言，您可以选择启用/禁用任何语言，您也可以在其中设置默认语言，以及用户是否可以选择自定义语言。</p>
+<h5 id="_40">添加新语言<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h5>
+<p>如果你想添加一个新的语言，我们鼓励你去我们的<a href="http://translate.chevereto.com/">翻译中心</a>，在这里你可以轻松的为添加一个新语言做贡献。如果你想从头开始手动添加翻译文件，你需要使用<a href="https://www.google.com/search?q=po%20editor">.po 编辑器软件</a>然后创建你自己的翻译。用.po文件进行编辑不是一件简单或者方便的事，这也是为什么我们鼓励你使用我们的翻译中心的原因，就是为了可以让你避免这种情况的选择。</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/debug-code-healer/CN-Chevereto/" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/ethantw/Han@3.3.0/dist/han.min.js"></script>
+      
+        <script src="../../_static/js/extra.js?v=10"></script>
+      
+        <script src="https://cdnjs.loli.net/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
